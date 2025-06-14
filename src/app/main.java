@@ -1,5 +1,7 @@
+package app;
 import java.util.Scanner;
-public class Main
+import utils.Operation;
+public class main
 {
     public static void main(String[] args) {
         {
@@ -11,7 +13,7 @@ public class Main
             { 
                 displayMenu();
                 choice = sc.nextInt();
-                if (choice == 6) 
+                if (choice == 5) 
                 {
                     System.out.println("Exiting...");
                     break;
@@ -28,7 +30,7 @@ public class Main
                 {
                     System.out.println("Error: " + e.getMessage());
                 }
-            } while (choice != 6);
+            } while (choice != 5);
             sc.close();
         }
     }
